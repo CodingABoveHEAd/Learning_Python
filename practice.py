@@ -23,18 +23,30 @@ from math import sqrt,pow
 #print(dic.get(1));
 # print(nums);
 
-x=(input('Enter 1st number '));
-y=(input('Enter 2nd number '));
 
-age=int(input('enter your age: '));
 
-if age<20:
-    print('Teenage');
-elif age>=20 and age<45:
- print('Young');
 
-else:
-    print('Old');
+# age=int(input('enter your age: '));
 
-z=x+y;
-#print(z);
+# if age<20:
+#     print('Teenage');
+# elif age>=20 and age<45:
+#  print('Young');
+
+# else:
+#     print('Old');
+
+
+i=1;
+
+fruits=['apple','banana','mango','pineapple'];
+
+for fruit in fruits:
+    print(fruit);
+
+for i in range(11,31,2):
+    print(i);
+
+# while i<=5:
+#     print('Niloy is a Joker');
+#     i+=1;
