@@ -1,3 +1,5 @@
+from math import sqrt,pow
+
 #print('Hello world');
 x=5;
 x+=10;
@@ -9,8 +11,13 @@ dic={1:'niloy',2:'adit',3:'ankon'};
 print(id(x));
 print(id(b));
 x+=1;
-print(id(x));
-print(type(c));
+#print(id(x));
+#print(type(c));
+
+p=25;
+pp=sqrt(p);
+print(pp);
+
 # del dic[1];
 #print(dic);
 #print(dic.get(1));
