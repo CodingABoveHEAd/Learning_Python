@@ -1,0 +1,17 @@
+#print('Hello world');
+x=5;
+x+=10;
+b=x;
+c=2+3j;
+#print(x);
+nums=[12,25,30,50,12];
+dic={1:'niloy',2:'adit',3:'ankon'};
+print(id(x));
+print(id(b));
+x+=1;
+print(id(x));
+print(type(c));
+# del dic[1];
+#print(dic);
+#print(dic.get(1));
+# print(nums);
