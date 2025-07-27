@@ -49,24 +49,46 @@ from math import sqrt,pow
 # else:
 #     print('Reached the endpoint');
 
-x=int(input('Enter the number: '));
-i=2;
-flag=0;
-while i<x :
-    if x%i==0:
-        flag=1;
-        break;
-    else :
-        i+=1;
+# x=int(input('Enter the number: '));
+# i=2;
+# flag=0;
+# while i<x :
+#     if x%i==0:
+#         flag=1;
+#         break;
+#     else :
+#         i+=1;
 
-if flag :
-    print('not prime');
-else :
-    print('prime');
-
-
+# if flag :
+#     print('not prime');
+# else :
+#     print('prime');
 
 
-# while i<=5:
-#     print('Niloy is a Joker');
-#     i+=1;
+def parity(x) :
+ return x%2;
+
+def calc(x,y=5):
+  print(x*y);
+
+def calc2(name,age):
+  print(name)
+  print(age)
+
+# x=int(input('Enter a number: '));
+# rem=parity(x);
+
+# if rem:
+#   print('Odd');
+# else :
+#   print('even');
+
+#calc(3,7);
+
+def calc3(**data):
+  for i,j in data.items():
+    print(i,j);
+
+
+#calc2(age=23,name='niloy');
+calc3(age=23,name='niloy',study='BSc');
