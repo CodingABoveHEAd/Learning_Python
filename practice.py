@@ -37,15 +37,35 @@ from math import sqrt,pow
 #     print('Old');
 
 
-i=1;
+# i=1;
 
-fruits=['apple','banana','mango','pineapple'];
+# fruits=['apple','banana','mango','pineapple'];
 
-for fruit in fruits:
-    print(fruit);
+# for fruit in fruits:
+#     print(fruit);
 
-for i in range(11,31,2):
-    print(i);
+# for i in range(11,31,2):
+#     print(i);
+# else:
+#     print('Reached the endpoint');
+
+x=int(input('Enter the number: '));
+i=2;
+flag=0;
+while i<x :
+    if x%i==0:
+        flag=1;
+        break;
+    else :
+        i+=1;
+
+if flag :
+    print('not prime');
+else :
+    print('prime');
+
+
+
 
 # while i<=5:
 #     print('Niloy is a Joker');
