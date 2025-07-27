@@ -1,94 +1,11 @@
-from math import sqrt,pow
+a=10
+b=20
 
-#print('Hello world');
-# x=5;
-# x+=10;
-# b=x;
-# c=2+3j;
-# #print(x);
-# nums=[12,25,30,50,12];
-# dic={1:'niloy',2:'adit',3:'ankon'};
-# print(id(x));
-# print(id(b));
-# x+=1;
-# #print(id(x));
-# #print(type(c));
+def varcheck() :
+    global a,b;
+    a=15
+    b=25;
+    print('inside: ' ,a,b);
 
-# p=25;
-# pp=sqrt(p);
-# print(pp);
-
-# del dic[1];
-#print(dic);
-#print(dic.get(1));
-# print(nums);
-
-
-
-
-# age=int(input('enter your age: '));
-
-# if age<20:
-#     print('Teenage');
-# elif age>=20 and age<45:
-#  print('Young');
-
-# else:
-#     print('Old');
-
-
-# i=1;
-
-# fruits=['apple','banana','mango','pineapple'];
-
-# for fruit in fruits:
-#     print(fruit);
-
-# for i in range(11,31,2):
-#     print(i);
-# else:
-#     print('Reached the endpoint');
-
-# x=int(input('Enter the number: '));
-# i=2;
-# flag=0;
-# while i<x :
-#     if x%i==0:
-#         flag=1;
-#         break;
-#     else :
-#         i+=1;
-
-# if flag :
-#     print('not prime');
-# else :
-#     print('prime');
-
-
-def parity(x) :
- return x%2;
-
-def calc(x,y=5):
-  print(x*y);
-
-def calc2(name,age):
-  print(name)
-  print(age)
-
-# x=int(input('Enter a number: '));
-# rem=parity(x);
-
-# if rem:
-#   print('Odd');
-# else :
-#   print('even');
-
-#calc(3,7);
-
-def calc3(**data):
-  for i,j in data.items():
-    print(i,j);
-
-
-#calc2(age=23,name='niloy');
-calc3(age=23,name='niloy',study='BSc');
+varcheck();
+print('outside: ' , a,b);
