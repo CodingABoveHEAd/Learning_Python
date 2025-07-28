@@ -1,27 +1,16 @@
-class student:
-    def __init__(self,name,roll):
-        self.name=name
-        self.roll=roll
-        self.lap=self.laptop()
+class A:
+    def mA(self):
+     print('This is class A');
 
-    def show(self):
-        print(self.name, self.roll);
-        self.lap.show()
+class B(A):
+   def mB(self):
+    print('This is class B');
 
-    class laptop:
+class C(B):
+   def mC(self):
+    print('This is class C');
 
-        def __init__(self):
-            self.brand='HP'
-            self.cpu='ryzen7'
-            self.ram=8
+obj1=C();
 
-        def show(self):
-            print(self.brand,self.cpu,self.ram)
+obj1.mA();
 
-    
-s1=student('niloy',117);
-s2=student('nishan',116);
-
-lap1=s1.lap
-
-s1.show();
