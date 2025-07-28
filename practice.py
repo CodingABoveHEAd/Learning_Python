@@ -1,7 +1,29 @@
-from demo import *
+class person:
+    Class='2nd year';
+    def __init__(self):
+        self.name='niloy'
+        self.age=23
 
-a=int(input('Enter first number: '));
-b=int(input('Enter second number: '));
+    def update(self):
+        self.name='niloy'
 
-res=div(a,b);
-print(res);
+    def compare(self,other):
+        return self.name==other.name
+        
+c1=person();
+c2=person();
+
+#print(c1.name);
+c2.name='Nishan'
+#print(c2.name);
+c2.update();
+
+
+c2.Class='3rd year';
+print(c1.Class);
+
+if c1.compare(c2):
+    print('same');
+else:
+    print('different');
+
