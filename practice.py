@@ -10,14 +10,12 @@
 # varcheck();
 # print('outside: ' , a,b);
 
-f0=0;
-f1=1;
 
-n=int(input('Enter the range: '));
+def factorial(num):
+    if num==0:
+        return 1;
+    return num*factorial(num-1);
 
-print(f0,end=" ");
-for i in range (n):
-    f2=f0+f1;
-    f0=f1;
-    f1=f2;
-    print(f0,end=" ");
+
+res=factorial(4);
+print(res);
