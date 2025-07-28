@@ -1,21 +1,12 @@
-# a=10
-# b=20
+# f = lambda a,b : a*b;
+# print(f(5,6));
+from functools import reduce
 
-# def varcheck() :
-#     global a,b;
-#     a=15
-#     b=25;
-#     print('inside: ' ,a,b);
+nums=[3,4,5,54,2];
 
-# varcheck();
-# print('outside: ' , a,b);
-
-
-def factorial(num):
-    if num==0:
-        return 1;
-    return num*factorial(num-1);
-
-
-res=factorial(4);
+res1=list(filter(lambda n: n%2==0 ,nums));
+print(res1);
+res=list(map( lambda n : n*2  ,res1));
+print(res);
+res=(reduce( lambda a,b : a+b  ,res));
 print(res);
