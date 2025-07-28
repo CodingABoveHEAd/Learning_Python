@@ -1,29 +1,27 @@
-class person:
-    Class='2nd year';
-    def __init__(self):
-        self.name='niloy'
-        self.age=23
+class student:
+    def __init__(self,name,roll):
+        self.name=name
+        self.roll=roll
+        self.lap=self.laptop()
 
-    def update(self):
-        self.name='niloy'
+    def show(self):
+        print(self.name, self.roll);
+        self.lap.show()
 
-    def compare(self,other):
-        return self.name==other.name
-        
-c1=person();
-c2=person();
+    class laptop:
 
-#print(c1.name);
-c2.name='Nishan'
-#print(c2.name);
-c2.update();
+        def __init__(self):
+            self.brand='HP'
+            self.cpu='ryzen7'
+            self.ram=8
 
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
 
-c2.Class='3rd year';
-print(c1.Class);
+    
+s1=student('niloy',117);
+s2=student('nishan',116);
 
-if c1.compare(c2):
-    print('same');
-else:
-    print('different');
+lap1=s1.lap
 
+s1.show();
