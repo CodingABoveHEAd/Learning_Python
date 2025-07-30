@@ -1,16 +1,25 @@
-class A:
-    def mA(self):
-     print('This is class A');
+class pycharm:
+    def execute(self):
+        print('compiling');
+        print('executing');
+        print('from pycharm');
 
-class B(A):
-   def mB(self):
-    print('This is class B');
+class numpy:
+    def execute(self):
+        print('compiling');
+        print('running');
+        print('executing');
+        print('from numpy');
 
-class C(B):
-   def mC(self):
-    print('This is class C');
 
-obj1=C();
+class laptop:
+    def code(self,ide):
+        ide.execute()
 
-obj1.mA();
+lap1=pycharm();
+lap2=numpy();
+
+machine=laptop();
+
+machine.code(lap2);
 
